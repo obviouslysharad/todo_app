@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="header">Do Shithard</h3>
+            </div>
+        </div>
+        <form id = "todoForm">
+            <div class="row">
+                <div class="col-md-3" class = "form-group">
+                    <label for="title">Title</label>
+                    <input name = 'title' type="text" class="form-control" id = "title" /> 
+                    </select>
+                </div>
+                <div class="col-md-6" class = "form-group">
+                    <label for="description">Description</label>
+                    <input name = 'desc' type="text" class="form-control" id = "description" /> 
+                </div>
+                <div class="col-md-3 action">
+                    <button id="btn" type = "button" class = "btn btn-primary">Add Karo</button>
+                </div>
+    
+            </div>
+        </form>
+        <div class="row">
+
+        </div>
+        <div class = "row">
+            <div class="col-md-12">
+                <h3 class = "header">To Karo Na</h3>
+            </div>
+        </div>
+        <div class="row">
+
+                    <div class="col-md-2">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1">Show Active</label>
+                          </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1">Show Completed</label>
+                          </div>
+                    </div>
+        </div>
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-md-2">Meeting</div>
+                <div class="col-md-2">Meet at MCD</div>
+                <div class="col-md-3">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-secondary">Edit</button>
+                        <button type="button" class="btn btn-secondary">Delete</button>
+                        <button type="button" class="btn btn-secondary">Completed</button>
+                      </div>
+                </div>
+                <div class="col-md-2">
+                    <button class= "btn btn-info"> Information</button>
+                </div>
+            </div>
+            
+
+        </div>
+
+    </div>
+     
+    <script src="./todo.js"></script>
+</body>
+</html>
